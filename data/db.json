@@ -1,0 +1,55 @@
+{
+  "products": [
+    {
+      "id": 4,
+      "name": "Oroduct 4",
+      "price": 400,
+      "description": "Product 4 description",
+      "category": "Category 1"
+    },
+    {
+      "id": 5,
+      "name": "Uroduct 5",
+      "price": 500,
+      "description": "Product 5 description",
+      "category": "Category 1"
+    },
+    {
+      "id": 6,
+      "name": "Zroduct 6",
+      "price": null,
+      "category": "Category 1"
+    },
+    {
+      "id": 7,
+      "name": "Croduct 789",
+      "price": 789,
+      "category": "Category 2"
+    },
+    {
+      "price": 900,
+      "id": 8,
+      "category": "Category 2"
+    },
+    {
+      "id": 9,
+      "name": "Product 9",
+      "price": 900,
+      "description": "Product 9 description",
+      "category": "Category 3"
+    },
+    {
+      "id": 10,
+      "name": "Name",
+      "price": 999,
+      "category": "Category 3"
+    },
+    {
+      "id": 11,
+      "name": "Name",
+      "price": 12,
+      "description": "Desc",
+      "category": "Category 3"
+    }
+  ]
+}
