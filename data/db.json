@@ -2,54 +2,67 @@
   "products": [
     {
       "id": 4,
-      "name": "Oroduct 4",
-      "price": 400,
-      "description": "Product 4 description",
-      "category": "Category 1"
+      "name": "B-Shoe 4",
+      "price": 79,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, pariatur?",
+      "category": "Running",
+      "image": "http://localhost:3000/assets/product_12.jpg"
     },
     {
       "id": 5,
-      "name": "Uroduct 5",
-      "price": 500,
-      "description": "Product 5 description",
-      "category": "Category 1"
+      "name": "Shoe 5",
+      "price": 89,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, pariatur?",
+      "category": "Running",
+      "image": "http://localhost:3000/assets/product_2.jpg"
     },
     {
       "id": 6,
-      "name": "Zroduct 6",
-      "price": null,
-      "category": "Category 1"
+      "name": "Shoe 6",
+      "price": 99,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, pariatur?",
+      "category": "Running",
+      "image": "http://localhost:3000/assets/product_3.jpg"
     },
     {
-      "id": 7,
-      "name": "Croduct 789",
-      "price": 789,
-      "category": "Category 2"
-    },
-    {
-      "price": 900,
       "id": 8,
-      "category": "Category 2"
+      "name": "Shoe 8",
+      "price": 129,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, pariatur?",
+      "category": "Running",
+      "image": "http://localhost:3000/assets/product_1.jpg"
     },
     {
       "id": 9,
-      "name": "Product 9",
-      "price": 900,
-      "description": "Product 9 description",
-      "category": "Category 3"
+      "name": "Shoe 9",
+      "price": 139,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, pariatur?",
+      "category": "Running",
+      "image": "http://localhost:3000/assets/product_6.jpg"
     },
     {
       "id": 10,
-      "name": "Name",
-      "price": 999,
-      "category": "Category 3"
+      "name": "A-Tennis 1",
+      "price": 159,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, pariatur?",
+      "category": "Tennis",
+      "image": "http://localhost:3000/assets/tennis_1.jpg"
     },
     {
       "id": 11,
-      "name": "Name",
-      "price": 12,
-      "description": "Desc",
-      "category": "Category 3"
+      "name": "Tennis 2",
+      "price": 159,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, pariatur?",
+      "category": "Tennis",
+      "image": "http://localhost:3000/assets/tennis_2.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Shoe 13",
+      "price": 21,
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, pariatur?",
+      "category": "Running",
+      "image": "http://localhost:3000/assets/product_8.jpg"
     }
   ]
 }

@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Sportify Web Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Homepage
+![](./public/assets/screen_6.png)
 
-## Available Scripts
+Product Category Select
+![](./public/assets/screen_3.png)
 
-In the project directory, you can run:
+Single Product View
+![](./public/assets/screen_2.png)
 
-### `npm start`
+Add product
+![](./public/assets/screen_4.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+About Us
+![](./public/assets/screen_5.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Mobile Responsive
+![](./public/assets/screen_7.png)
 
-### `npm test`
+## Table of contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Sportify Web Store](#sportify-web-store)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Links](#links)
+    - [Built with](#built-with)
+  - [Acknowledgments](#acknowledgments)
 
-### `npm run build`
+## Overview
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### The challenge
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Users should be able to:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- View the optimal layout depending on their device's screen size
+- Sort products according to different parameters like: "name" and "price" in descending or ascending order, and also sort according to product category.
+- Add new products.
+- Edit existing products.
+- Single page view for individual products.
 
-### `npm run eject`
+### Links
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Solution URL: [Visit my GitHub](https://github.com/AlexanderWiklow/React-Project-Sports-Items-Web-Store)
+<!-- - Live Site URL: [Visit this live project](https://alexanderwiklow.github.io/Project-Landing-Page/product-list-page.html) -->
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- ## My process -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Built with
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- JavaScript
+- React
+- Grid
+- SASS
+- Lodash
+- Material UI
 
-## Learn More
+<!-- ### Continued development -->
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- ## Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Website - [Alexander Wiklöw](https://github.com/AlexanderWiklow/Project-Landing-Page) -->
 
-### Code Splitting
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks Jonas Stattin who helped me through this project.

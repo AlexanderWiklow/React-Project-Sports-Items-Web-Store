@@ -1,46 +1,20 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-// import SingleUser from './pages/Users'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Products from "./pages/Products";
 import Product from "./pages/Product";
 import Categories from "./pages/Categories";
-import "./App.css";
+import "./App.scss";
 import CategoriesSpecific from "./pages/CategoriesSpecific";
-import "./pages/ProductCard.css";
 import About from "./pages/About";
 import AddProduct from "./pages/AddProduct";
-import Navbar from './components/MaterialNav'
-import SideBar from './components/SideBarDrawer'
-// import Navbar from './components/Navbar'
+import Navbar from "./components/MaterialNav";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navbar/>
-        <SideBar/>
-        {/* <Navbar /> */}
-        {/* <header>
-          <ul>
-            <li>
-              <Link to="./">Home</Link>
-            </li>
-            <li>
-              <Link to="./Product">Product</Link>
-            </li>
-            <li>
-              <Link to="./pages/About">About</Link>
-            </li>
-            <li>
-              <Link to="./pages/Categories">Categories</Link>
-            </li>
-            <li>
-              <Link to="./pages/AddProduct">Add Product</Link>
-            </li>
-            <li>
-              <Link to="./Product">Contact</Link>
-            </li>
-          </ul>
-        </header> */}
+      {/* BrowserRouter is a router implementation that uses the HTML5 history API (pushstate, replacestate, and popstate events) to keep your UI in sync with the URL. It is the parent component used to store all other components. Route: This is a new component introduced in v6 and an upgrade of the component. */}
+      <BrowserRouter className="BrowserRouter">
+        <Navbar />
         <Routes>
           <Route path="/" element={<Products />} />
           <Route path="/product/:id" element={<Product />} />
@@ -54,13 +28,9 @@ function App() {
           <Route path="/pages/About" element={<About />} />
           <Route path="/pages/AddProduct" element={<AddProduct />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
 }
-
-// function Home() {
-//   return <h1>Home page</h1>;
-// }
-
 export default App;

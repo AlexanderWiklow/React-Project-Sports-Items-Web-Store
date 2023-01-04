@@ -1,84 +1,53 @@
-import { Link } from 'react-router-dom';
-// import Product from './Product'
-// import CategorieSpecific from './CategoriesSpecific'
+import { Link } from "react-router-dom";
+import "../styles/main.scss";
+import { useEffect, useState } from "react";
 
-import { useEffect, useState } from 'react'
-// import { useParams, Link } from "react-router-dom"
+//  Here we manages two states. Also uses the useEffect hook to fetch data from the API.
+export default function Categories() {
+  const [categoriesList, setCategoriesList] = useState([]);
 
-export default function Categories() { 
-//   const { id } = useParams()
-  const [categoriesList, setCategoriesList] = useState([])
+  useEffect(() => {
+    const getCategories = async () => {
+      const res = await fetch(`http://localhost:3001/products`);
 
-    useEffect(() => {
-        const getCategories = async () => {
-          // const res = await fetch(`https://fakestoreapi.com/products/categories`)
-          const res = await fetch(`http://localhost:3001/products`)
+      const categoriesList = await res.json();
 
-          
-            const categoriesList = await res.json()
+      setCategoriesList(categoriesList);
+    };
 
+    getCategories();
+  }, []);
 
-            setCategoriesList(categoriesList)
+  // Here we use the Set object to remove duplicates from the array.
+  const uniqueCategories = [
+    ...new Set(categoriesList.map((item) => item.category)),
+  ];
 
-        }
+  const imageShoe = "http://localhost:3000/assets/product_1.jpg";
+  const imageTennis = "http://localhost:3000/assets/tennis_1.jpg";
 
-        getCategories()
-    }, []);
-  
-    // filter unique values from array
-  // const uniqueCategories = [...new Set(categoriesList.categories)]
-
-  // filter unique values from array
-  const uniqueCategories = [...new Set(categoriesList.map(item => item.category))]
-  // console.log("unique", uniqueCategories)
-
-  // console.log("unique", uniqueCategories)
-
-//   if (!user) {
-//     return <div>User not found</div>
-//   }
-    //JSON format. array till en array med jsx element
-    // en ny komponent som heter product
-
-                console.log("categories",categoriesList)
-    
   return (
     <>
-      <Link to="/">Back</Link>
+      {/* <Link to="/">Back</Link> */}
       <div>
-        {/* <h1>{user.name.firstname} {user.name.lastname}</h1>
-        <p>{user.phone}</p> */}
-              <h1>CATEGORIES:</h1>
-        {uniqueCategories.map((categories) =>
-          
-          <p>{categories}  <Link to={"./CategoriesSpecific/" + categories}>More info</Link></p>
-                
+        <h1>CATEGORIES:</h1>
 
-        )}
-                      {/* console.log(categories) */}
-                   
-            {/* <p>{productList.title}</p> */}
+        <div className="link-btn-container">
+          {uniqueCategories.map((categories) => (
+            <div className="category-link-btn">
+              <Link
+                className="link-btn-category"
+                to={"./CategoriesSpecific/" + categories}
+              >
+                <h3>{categories}</h3>
+              </Link>
+            </div>
+          ))}
+        </div>
+
+        <img src={imageShoe} alt="shoe"></img>
+        <img src={imageTennis} alt="tennis"></img>
       </div>
     </>
-  )
+  );
 }
-
-
-// function Product({ product }) { 
-
-
-
-
-//     return (
-//     <ul>
-//      {productList.map(product => (
-//         <Product key={product.id} product={product} />
-//     ))}
-//     </ul>
-
-//     <div className="product">
-//       <p>{product.title}</p>
-//     </div>
-//   )
-// }
-

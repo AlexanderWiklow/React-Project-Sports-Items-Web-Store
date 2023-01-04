@@ -1,0 +1,88 @@
+.individual-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3rem;
+
+  //   width: 40%;
+}
+
+.edit-btns {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  //   margin-top: 20rem;
+}
+
+.single-product-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 3rem;
+  & .content {
+    margin-top: -20rem;
+    background-color: rgb(246, 243, 243);
+    display: flex;
+    max-height: 50rem;
+    width: 50%;
+    // padding-right: 1rem;
+    text-align: left;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    & .text-content {
+      padding: 2rem;
+      background-color: black;
+      color: white;
+      border-radius: 0px 10px 10px 0px;
+    }
+    & img {
+      width: 50%;
+      height: auto;
+      border-radius: 10px 0px 0px 10px;
+    }
+    & p {
+      // margin: 1rem;
+      font-size: 1.5rem;
+    }
+    & .edit-btns {
+      display: flex;
+      // flex-direction: column;
+    }
+  }
+}
+
+.edit-btn {
+  border: none;
+  background-color: rgb(189, 131, 21);
+  border-radius: 10px;
+  width: 6rem;
+  font-size: larger;
+  font-weight: bold;
+  color: white;
+}
+
+.delete-btn {
+  border: none;
+  background-color: rgb(189, 131, 21);
+  border-radius: 10px;
+  width: 6rem;
+  font-size: larger;
+  font-weight: bold;
+  color: white;
+}
+
+.back-btn {
+  border: none;
+  background-color: rgb(189, 131, 21);
+  border-radius: 10px;
+  width: 6rem;
+  font-size: larger;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}

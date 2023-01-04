@@ -1,60 +1,59 @@
-import { useEffect, useState } from 'react'
-import { useParams, Link } from "react-router-dom"
-// import Products from './Products';
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import Card from "../components/Card";
+import { Grid } from "@mui/material";
 
-export default function CategoriesSpecific() { 
-  const { category } = useParams()
-  // console.log(typeof category)
-  // console.log(category)
+export default function CategoriesSpecific() {
+  const { category } = useParams();
 
-  // category.map((products) => {
-  //   return console.log(products)
-  // })
-
-  const [categoriesSpecific, setCategoriesSpecific] = useState(null)
+  const [categoriesSpecific, setCategoriesSpecific] = useState(null);
 
   useEffect(() => {
     const getCategories = async () => {
-      const res = await fetch(`http://localhost:3001/products/`)
-      const categoriesSpecific = await res.json()
-      
-      // console.log(categoriesSpecific[category].category)
+      const res = await fetch(`http://localhost:3001/products/`);
+      const categoriesSpecific = await res.json();
 
-      setCategoriesSpecific(categoriesSpecific)
-    }
+      setCategoriesSpecific(categoriesSpecific);
+    };
 
-    getCategories()
-  }, [category])
+    getCategories();
+  },[category]);
 
   if (!categoriesSpecific) {
-    return <div>Product not found</div>
+    return <div>Product not found</div>;
   }
 
-  const categoriesSpecificFilter = categoriesSpecific.filter((categoriesSpecific) => categoriesSpecific.category === category)
-
-  // console.log("categoryspeci", Object.values(categoriesSpecific))
-  // console.log("categoryspeci", categoriesSpecific[0].category)
-
-  // if (categoriesSpecific[0].category === category) {
-  //   console.log("GOOD NIGHT!!")
-  // }
+  // Here we filter the array to only show the products that have the same category as the category in the API.
+  const categoriesSpecificFilter = categoriesSpecific.filter(
+    (categoriesSpecific) => categoriesSpecific.category === category
+  );
 
   return (
     <>
-      <Link to="/">Back</Link>
-          <div>
-        <p>Categories Specific:</p>
-        {categoriesSpecificFilter.map((product) =>
-          
-          
-          <p>{product.name} {product.category}  <Link to={"../Product/" + product.id}>More info</Link></p>
-              
-              ) }
-                   
-            {/* <p>{productList.title}</p> */}
-        {/* <h1>{categoriesSpecific.title} {categoriesSpecific.price}</h1> */}
+      <div className="category-specific-container">
+        <Grid item xs={12}>
+          <h1>All Our {category} Products</h1>
+        </Grid>
 
+        <div className="">
+          <Grid className="grid-container" container spacing={40}>
+            {categoriesSpecificFilter.map((product) => (
+              <>
+                <Grid item xs={4}>
+                  <Card
+                    name={product.name}
+                    price={product.price}
+                    desc={product.description}
+                    img={product.image}
+                    id={product.id}
+                  />
+                </Grid>
+              </>
+            ))}
+            {/* <Link to="/">Back</Link> */}
+          </Grid>
+        </div>
       </div>
     </>
-  )
+  );
 }
