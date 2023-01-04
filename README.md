@@ -9,7 +9,7 @@ Product Category Select
 Single Product View
 ![](./public/assets/screen_2.png)
 
-Add product
+Add Product
 ![](./public/assets/screen_4.png)
 
 About Us
