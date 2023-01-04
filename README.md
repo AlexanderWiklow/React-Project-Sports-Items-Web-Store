@@ -16,6 +16,7 @@ About Us
 ![](./public/assets/screen_5.png)
 
 Mobile Responsive
+
 ![](./public/assets/screen_7.png)
 
 ## Table of contents
