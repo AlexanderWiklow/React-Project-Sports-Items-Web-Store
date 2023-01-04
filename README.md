@@ -1,6 +1,6 @@
 # Sportify Web Store
 
-Front page
+Front Page
 ![](./public/assets/screen_6.png)
 
 Product Category Select
